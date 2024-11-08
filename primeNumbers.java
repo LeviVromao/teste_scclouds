@@ -36,10 +36,13 @@ public class primeNumbers {
         return primes;
     }
 
+    // funcao simples que calcula se o resto de uma divisao e 0 para verificar se o
+    // numero e primo
     public static boolean isPrime(int n, List<Integer> primes) {
         if (n <= 1) {
             throw new IllegalArgumentException("Apenas numero maior que 1 sao permitidos");
         }
+        // for each para verificar se no array contem numeros primos
         for (int prime : primes) {
             if (n % prime == 0) {
                 return false;
