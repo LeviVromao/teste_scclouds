@@ -19,8 +19,8 @@ public class fibonacci {
     }
 
     public static void main(String[] args) {
-        System.out.println(fiboRecursive(10));
-        System.out.println(fiboLinear(10));
+        System.out.println(fiboRecursive(5));
+        System.out.println(fiboLinear(5));
     }
 
     public static int fiboLinear(int n) {
@@ -41,7 +41,7 @@ public class fibonacci {
         // Termo em nextTerm com a soma dos dos dois ultimos termos
         // assim fazendo a troca de valores em cada iteração
         // term1 recebendo term2 e term2 recebendo o nextTerm
-        for (int i = 2; i < n; i++) {
+        for (int i = 2; i <= n; i++) {
             int nextTerm = term1 + term2;
             term1 = term2;
             term2 = nextTerm;
